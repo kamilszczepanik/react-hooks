@@ -53,10 +53,9 @@ function Game() {
     if (winner || currentSquares[square]) {
       return
     }
-    console.log(history)
+
     const newHistory = history.slice(0, currentStep + 1)
     const squares = [...currentSquares]
-    console.log(newHistory)
 
     squares[square] = nextValue
     setHistory([...newHistory, squares])
